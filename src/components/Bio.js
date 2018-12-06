@@ -27,7 +27,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Alec DiFederico</strong> who lives and works in Boston building useful things.{' '}
+          Portfolio and Blog by <strong>Alec DiFederico</strong> who lives and works in Boston building useful things.{' '}
           <a href="https://github.com/Alec1017">
             You should check out his github
           </a>
