@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/',
+    title: 'My Portfolio and Blog',
+    author: 'Alec DiFederico',
+    description: 'A site to show my portfolio and blog',
+    siteUrl: 'https://quietbroom.com/',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
