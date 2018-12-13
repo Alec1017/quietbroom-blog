@@ -18,7 +18,6 @@ The first thing you'll want to do is initialize the project with a package manag
 yarn init
 # or npm init
 ```
-<br>
 
 There will be a few questions to answer, but once thats done you'll have a package.json file.
 
@@ -34,8 +33,6 @@ There will be a few questions to answer, but once thats done you'll have a packa
 }
 ```
 
-<br>
-
 It might also be a good idea to add a .gitignore file. We don't want to add the node_modules folder when we commit. 
 
 ```.gitignore
@@ -43,35 +40,29 @@ It might also be a good idea to add a .gitignore file. We don't want to add the 
 node_modules/
 ```
 
-<br>
-
-Ok let's add some core dependencies for our React project. We'll want **webpack** which lets us bundle all our files into a single file to be used for production. We'll also add **webpack-cli** which lets us use **webpack** with the command line. 
+Ok let's add some core dependencies for our React project. We'll want `webpack` which lets us bundle all our files into a single file to be used for production. We'll also add `webpack-cli` which lets us use `webpack` with the command line. 
 
 We'll also install everything we need to transpile ES6 and JSX code into ES5. We have to do this because of a lack of browser support for ES6 and JSX. That's where Babel comes in. 
 
-We'll need **babel-core**, **babel-loader**, **babel-preset-env**, **babel-preset-react**.
+We'll need `babel-core`, `babel-loader`, `babel-preset-env`, and  `babel-preset-react`.
 
 ```bash
 yarn add webpack webpack-cli --dev
 yarn add @babel/core @babel/preset-env @babel/preset-react babel-loader --dev
 ```
 
-<br>
 
 **babel-core**: <br>
 **babel-preset-env**: Transpiles ES6, ES7, and ES8 code to ES5<br>
 **babel-preset-react**: Transpiles JSX code to ES5<br>
-**babel-loader**: Webpack plugin for Babel
+**babel-loader**: Webpack plugin for Babel<br>
 
-<br>
-
-We'll also want to add **react** and **react-dom**.
+We'll also want to add `react` and `react-dom`.
 
 ```bash
 yarn add react react-dom
 ```
 
-<br>
 
 
 

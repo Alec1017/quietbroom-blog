@@ -1,5 +1,6 @@
 import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
+import { redirectTo } from '@reach/router';
 
 Wordpress2016.overrideThemeStyles = () => ({
   'a.gatsby-resp-image-link': {
@@ -7,6 +8,9 @@ Wordpress2016.overrideThemeStyles = () => ({
   },
   a: {
     color: '#b30000'
+  },
+  'p code.language-text': {
+    fontSize: '1.1rem'
   }
 })
 
