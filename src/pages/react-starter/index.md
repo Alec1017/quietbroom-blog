@@ -347,7 +347,7 @@ yarn start
 # or npm start
 ```
 
-And that's everything! You now have your own functional React boilerplate made from scratch. Feel free to check out this project on Github as well.
+And that's everything! You now have your own functional React boilerplate made from scratch. Feel free to check out this project on [Github](https://github.com/Alec1017/react-starter-code/tree/simple) as well.
 
 
 
