@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Portfolio and Blog',
+    title: 'Quietbroom Blog',
     author: 'Alec DiFederico',
     description: 'A site to show my portfolio and blog',
     siteUrl: 'https://quietbroom.com/',
@@ -65,5 +65,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-sass`
   ],
 }
