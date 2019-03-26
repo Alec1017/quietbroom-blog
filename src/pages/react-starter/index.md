@@ -341,13 +341,13 @@ The only thing left to do is add a scripts key to **package.json** which will ru
 
 The start script will run our server  and the two flags `--open` and `--hot` allow the webpage to refresh whenever a change is made to your code. 
 
-To see the code in action, run the following command in the terminal and your browser should automatically open up at ht<span>tp://localhost:3000..
+To see the code in action, run the following command in the terminal and your browser should automatically open up at ht<span>tp://localhost:3000.
 ```bash
 yarn start
 # or npm start
 ```
 
-And that's everything! You now have your own functional React boilerplate made from scratch. Feel free to check out this project on [Github](https://github.com/Alec1017/react-starter-code/tree/simple) as well.
+And that's everything! You now have your own functional React boilerplate made from scratch. Feel free to check out this project on [Github](https://github.com/Alec1017/react-starter-code) as well.
 
 
 
