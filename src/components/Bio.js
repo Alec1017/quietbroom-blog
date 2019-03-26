@@ -4,7 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './profile-pic.jpeg'
 import { rhythm } from '../utils/typography'
 
 const Bio = () => (
@@ -15,8 +15,9 @@ const Bio = () => (
       style={{
         marginRight: rhythm(1 / 2),
         marginBottom: 0,
-        width: rhythm(2),
-        height: rhythm(2),
+        width: '5rem',
+        height: '5rem',
+        borderRadius: '50%'
       }}
     />
     <p>
