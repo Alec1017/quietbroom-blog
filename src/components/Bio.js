@@ -4,23 +4,12 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpeg'
-import { rhythm } from '../utils/typography'
+import profilePic from '../assets/profile-pic.jpeg'
 
 const Bio = () => (
-  <div style={{ display: 'flex', marginBottom: rhythm(2.5) }}>
-    <img
-      src={profilePic}
-      alt={`Alec DiFederico`}
-      style={{
-        marginRight: rhythm(1 / 2),
-        marginBottom: 0,
-        width: '5rem',
-        height: '5rem',
-        borderRadius: '50%'
-      }}
-    />
-    <p>
+  <div className='bio'>
+    <img className='bio__profile-pic' src={profilePic} alt='Alec DiFederico' />
+    <p className='bio__message'>
       Portfolio and blog by <strong>Alec DiFederico</strong> who lives and works in Boston building useful things.{' '}
       <a href="https://github.com/Alec1017">
         You should check out his github
