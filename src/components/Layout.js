@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import '../stylesheets/main.scss';
-
 function Layout(props) {
   const { location, title, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
