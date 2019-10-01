@@ -1,11 +1,6 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# My Blog Site
+This is the code for my portfolio and blog website.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This is where I will be putting write-ups for tutorials and introductions to some of my personal projects
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
-
-Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
-
-## Running in development
-`gatsby develop`
+You can view my site at [quietbroom.com](https://quietbroom.com)
