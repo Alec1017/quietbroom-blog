@@ -1,5 +1,5 @@
 ---
-title: Seaport's Infamous _name() function
+title: Seaport's Infamous _name() Function
 date: "2022-06-07"
 intro: "How a seemingly over-engineered function unlocks hidden meanings about Solidity and ABI encodings"
 ---
