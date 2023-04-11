@@ -2,7 +2,7 @@ import React from 'react';
 import 'typeface-montserrat';
 import 'typeface-merriweather';
 
-import profilePic from '../assets/profile-pic.jpeg';
+import profilePic from '../assets/profile-pic.jpg';
 
 
 function Bio() {
@@ -10,7 +10,7 @@ function Bio() {
     <div className='bio'>
       <img className='bio__profile-pic' src={profilePic} alt='Alec DiFederico' />
       <p className='bio__message'>
-        Hey there, I'm <strong>Alec</strong>
+        Hey there, I'm <strong>Alec</strong>.
         
         <br></br>
         <br></br>

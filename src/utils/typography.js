@@ -9,9 +9,9 @@ Wordpress2016.overrideThemeStyles = () => ({
   a: {
     color: '#b30000'
   },
-  'p code.language-text': {
-    fontSize: '1.1rem'
-  }
+  // 'p code.language-text': {
+  //   fontSize: '1rem'
+  // }
 })
 
 delete Wordpress2016.googleFonts;

@@ -1,9 +1,13 @@
 ---
 title: DeFi Borrow Router
-date: "2022-03-02"
+date: "2022-01-07"
 intro: "The first aggregator to find the cheapest borrows"
 ---
+This router allows you to borrow at the lowest rate in DeFi with no added gas costs.
 
-React has a pretty steep learning curve because of all its dependencies and configurations. Luckily, the developers over at Facebook put together [create-react-app](https://github.com/facebook/create-react-app) to make our lives easier.
+Crypto borrowers pay less interest on their loans by automatically borrowing from the lending protocol with the lowest interest rate among the supported lending protocols.
 
-And that's everything! You now have your own functional React boilerplate made from scratch. Feel free to check out this project on [Github](https://github.com/Alec1017/react-starter-code) as well.
+ It supports the Ethereum mainnet and Arbitrum networks.
+
+Try it youself [here](https://router.greenwood.finance/)!
+
