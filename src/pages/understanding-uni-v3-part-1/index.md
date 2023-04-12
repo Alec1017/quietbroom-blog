@@ -49,3 +49,39 @@ The result is that an incoming $\Delta{x}$ of $5,037.81$ tokens to the pool and 
 
 $99.5\%$ of the tokens were unnecessary...
 
+### Fixing capital inefficiency
+
+If $1,000,000$ $y$ tokens are in the pool, it would be better that all $1,000,000$ $y$ tokens be swapped out before the price drops to $0.99$. Similarly, it would be better that all $1,000,000$ $x$ tokens be swapped out before the price rises to $1.01$.
+
+To enable this behavior, two new features are needed: the ability for LPs (liquidity providers) to deposit liquidity between any two prices they see fit, and that the AMM (automated market maker) offers a $x \cdot y = k$ pricing curve between any two prices where an LP has deposited their liquidity. 
+
+With the addition of these features, a central limit order book is introduced into the AMM. Rather than having traditional market makers create single-price limit orders, LPs will create ranged-price limit orders. And rather than the price skipping up and down due to bid/ask spreads, prices instead smooth out using a $x \cdot y = k$ curve between the lower and upper price of a ranged-price limit order. It does, however, require active management of LP positions, which is something that was not necessary in uniswap V2.
+
+So, how does V2's $x \cdot y = k$ curve evolve to support the addition of these new features in V3?
+
+### A new kind of curve
+
+Specifically, the goal for V3 is to have a $x \cdot y = k$ curve where two prices, $P_{a}$ and $P_{b}$, are specified as lower and upper bounds for the curve.
+
+With this new curve, when y tokens are completely exhausted from the pool, the price will be $P_{a}$. When x tokens are completely exhausted from the pool, the price will be $P_{b}$.
+
+---
+
+In a V2 stablecoin pair, prices tend to hover between $0.99$ and $1.01$, but it allowed for the possibility of any price between $0$ and $\infty$ to be quoted because the curve is unbounded.
+
+![image info](./curve-1.svg)
+
+
+---
+
+In V3, the curve forces trades to take place between prices $P_{a}$ and $P_{b}$.
+
+![image info](./curve-2.svg)
+
+V3 uses the original $x \cdot y = k$ function as a base to create a new bounded-curve function:
+
+$$
+(x + \frac{L}{\sqrt{P_{b}}})(y + \frac{L}{\sqrt{P_{a}}}) = L^{2}
+$$
+
+The following sections will describe how this new function is derived.
