@@ -5,6 +5,8 @@ import Helmet from 'react-helmet';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 
+import 'katex/dist/katex.min.css'
+
 
 function BlogPost(props) {
   const post = props.data.markdownRemark;
