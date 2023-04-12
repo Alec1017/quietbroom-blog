@@ -85,3 +85,17 @@ $$
 $$
 
 The following sections will describe how this new function is derived.
+
+### Breaking down the x ⋅ y = k curve from V2
+
+![image info](./curve-3.svg)
+
+In V2, all $x$ reserves would have to be depleted from the pool to reach the highest price on the curve, which would approach infinity. But in V3, we say the upper price bound is just $P_{b}$.
+
+So if $P$ is the current price, then the pool only has to reduce by $x_{real}$ amount of $x$ tokens to reach the price $P_{b}$. And at that price $P_{b}$, $x'$ is the amount of $x$ tokens remaining in the pool.
+
+But because we decided $P_{b}$ would be the absolute max price for this pool, those remaining $x'$ tokens are not needed. Those $x'$ tokens would only be used to trade between prices $P_{b}$ and $\infty$, so we have no use for them in this new pool design.
+
+In V3, those $x'$ reserves are considered "virtual" and do not need to be provided by LPs. The $x'$ number only exists in the math so that the $x \cdot y = k$ curve can hold, where $x = x_{real} + x'$.
+
+The same can be said in the opposite direction for $P_{a}$, $y_{real}$, and $y'$.
