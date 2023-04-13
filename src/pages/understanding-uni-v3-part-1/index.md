@@ -81,7 +81,7 @@ In V3, the curve forces trades to take place between prices $P_{a}$ and $P_{b}$.
 V3 uses the original $x \cdot y = k$ function as a base to create a new bounded-curve function:
 
 $$
-(x + \frac{L}{P_{b}})(y + L \cdot \sqrt{P_{a}}) = L^{2}
+(x + \frac{L}{\sqrt{P_{b}}})(y + L \cdot \sqrt{P_{a}}) = L^{2}
 $$
 
 The following sections will describe how this new function is derived, which is introduced in the whitepaper.
