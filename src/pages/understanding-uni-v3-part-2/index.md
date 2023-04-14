@@ -156,19 +156,19 @@ The goal here to determine the ratio of $x$ and $y$ tokens to deposit for the sp
 
 We know that when $P$ is below $P_{a}$, the range only has $x_{real}$ tokens as liquidity:
 
-[SHOW GRAPH HERE]
+![image info](./line-1.svg)
 
 And we also know that when $P$ is above $P_{b}$ the range only has $y$ tokens in it: 
 
-[SHOW GRAPH HERE]
+![image info](./line-2.svg)
 
 If we combine these two examples, we can see that to the left of $P$ only exists $x$ tokens and to the right only $y$ tokens.
 
-[SHOW GRAPH HERE]
+![image info](./line-3a.svg)
 
 The intuition here is that any range, where $P$ is inside $P_{a}$ and $P_{b}$, can be split up into two sub-ranges, with one only containing $x_{real}$ tokens and one only containing $y_{real}$  tokens:
 
-[SHOW GRAPH HERE]
+![image info](./line-4.svg)
 
 Since we have already solved for $L$ in both cases where a range has oly $x_{real}$ tokens or only $y_{real}$ tokens, we can also solve for this case.
 

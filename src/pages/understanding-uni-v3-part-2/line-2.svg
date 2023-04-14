@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.69001940758835 61.631739133984865" width="511.69001940758835" height="61.631739133984865">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="511.69001940758835" height="61.631739133984865" fill="#ffffff"></rect><g transform="translate(149.78662452761841 26.631739133984865) rotate(0 11.699999809265137 12.5)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Pb</text></g><g transform="translate(10 26.631739133984865) rotate(0 6.616666793823242 12.5)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">P</text></g><g transform="translate(475.12335185082566 26.631739133984865) rotate(0 13.283333778381348 12.5)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Pa</text></g><g stroke-linecap="round"><g transform="translate(189.725660106938 39.54777075460288) rotate(0 134.37821345958565 -0.41603162061778676)"><path d="M0 0 C91.71 -0.28, 183.42 -0.57, 268.76 -0.83 M0 0 C106.39 -0.33, 212.77 -0.66, 268.76 -0.83" stroke="#000000" stroke-width="1" fill="none"></path></g></g><mask></mask><g stroke-linecap="round"><g transform="translate(35.793960478310396 39.131739133984865) rotate(0 52.836015818474834 0)"><path d="M0 0 C40.43 0, 80.86 0, 105.67 0" stroke="#000000" stroke-width="1.5" fill="none" stroke-dasharray="1.5 7"></path></g></g><mask></mask><g transform="translate(304.72054036034694 10) rotate(0 19.383333206176758 10)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="16px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Yreal</text></g></svg>
