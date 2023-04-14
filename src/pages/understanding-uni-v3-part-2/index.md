@@ -24,7 +24,7 @@ For each of these cases, we will see how much of token $x$ and token $y$ that an
 
 Here, we have a graph where $P$ is below $P_{a}$:
 
-[SHOW GRAPH HERE]
+![image info](./curve-1.svg)
 
 From Part 1 in this series, we know that $y_{real}$ reserves become $0$ when the price reaches or exceeds $P_{a}$. So, for any price at $P_{a}$ or below, there are $0 y_{real}$ tokens in the LP position for this range. 
 
@@ -90,7 +90,7 @@ We can see that calculating liquidity to provide only requires the deposit of $x
 
 Here, we have a graph where $P$ is above $P_{b}$:
 
-[SHOW GRAPH HERE]
+![image info](./curve-2.svg)
 
 From Part 1 in this series, we know that $x_{real}$ reserves become 0 when the price reaches or exceeds $P_{b}$. So, for any price at $P_{b}$ or higher, there are 0 $x_{real}$ tokens in the LP position for this range.
 
@@ -148,7 +148,7 @@ We can see that calculating liquidity to provide only requires the deposit of $y
 
 Here, we have a graph when $P$ is between $P_{a}$ and $P_{b}$.
 
-[SHOW GRAPH HERE]
+![image info](./curve-3.svg)
 
 The goal here to determine the ratio of $x$ and $y$ tokens to deposit for the specified range, $P_{a}$ and $P_{b}$.
 
