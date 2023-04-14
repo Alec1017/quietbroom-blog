@@ -85,3 +85,62 @@ L = x_{real} \cdot \frac{\sqrt{P_{b}} \cdot \sqrt{P_{a}}}{\sqrt{P_{b}} - \sqrt{P
 $$
 
 We can see that calculating liquidity to provide only requires the deposit of $x_{real}$ tokens by the LP when price $P$ is below $P_{a}$.
+
+### Calculate L when $P_{b} \leq P$
+
+Here, we have a graph where $P$ is above $P_{b}$:
+
+[SHOW GRAPH HERE]
+
+From Part 1 in this series, we know that $x_{real}$ reserves become 0 when the price reaches or exceeds $P_{b}$. So, for any price at $P_{b}$ or higher, there are 0 $x_{real}$ tokens in the LP position for this range.
+
+---
+
+To solve for $L$, we take our concentrated liquidity function and specify that $x_{real}$ is $0$ when $P_{b} \leq P$:
+
+$$
+(0 + \frac{L}{\sqrt{P_{b}}})(y_{real} + L \sqrt{P_{a}}) = L^{2}
+\longrightarrow
+\frac{L}{\sqrt{P_{b}}} \cdot (y_{real} + L \sqrt{P_{a}}) = L^{2}
+$$
+
+Cancel out an $L$ on each side:
+
+$$
+\frac{1}{\sqrt{P_{b}}} \cdot (y_{real} + L \sqrt{P_{a}}) = L
+$$
+
+Multiply out $\frac{1}{\sqrt{P_{b}}}$:
+
+$$
+\frac{y_{real}}{\sqrt{P_{b}}} + L \cdot \frac{\sqrt{P_{a}}}{\sqrt{P_{b}}} = L
+$$
+
+Move $L$ to one side:
+
+$$
+\frac{y_{real}}{\sqrt{P_{b}}} = L + L \cdot \frac{\sqrt{P_{a}}}{\sqrt{P_{b}}}
+$$
+
+Multiply both sides by $\sqrt{P_{b}}$:
+
+$$
+y_{real} = L \cdot \sqrt{P_{b}} - L \cdot \frac{\sqrt{P_{a}} \cdot \sqrt{P_{b}}}{\sqrt{P_{b}}}
+\longrightarrow
+y_{real} = L \cdot \sqrt{P_{b}} - L \cdot \sqrt{P_{a}}
+$$
+
+Pull $L$ out of the binomial:
+
+$$
+y_{real} = L \cdot (\sqrt{P_{b}} - \sqrt{P_{a}})
+$$
+
+Finally: 
+
+$$
+L = \frac{y_{real}}{\sqrt{P_{b}} - \sqrt{P_{a}}}
+$$
+
+We can see that calculating liquidity to provide only requires the deposit of $y_{real}$ tokens by the LP when price $P$ is above $P_{b}$.
+
