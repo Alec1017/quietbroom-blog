@@ -10,7 +10,7 @@ When providing liquidity on V3, an LP doesn't necessarily have to provide an equ
 
 Each position that an LP creates is a mapping from an account address, lower bound, and upper bound to a liquidity value $L$. This liquidity will be combined later on, when the price crosses this particular LP's range, with all the other LPs to create a global $L$ value for swaps. 
 
-So, depending on the range specified by the LP relative to the current price P, There are three different ways to compute this $L$ value, and therefore, how much of each $x$ and $y$ token to deposit.
+So, depending on the range specified by the LP relative to the current price P, there are three different ways to compute this $L$ value, and therefore, how much of each $x$ and $y$ token to deposit.
 
 1\. $P \leq P_{a}$, current price is below the LP's range
 
@@ -26,11 +26,11 @@ Here, we have a graph where $P$ is below $P_{a}$:
 
 ![image info](./curve-1.svg)
 
-From Part 1 in this series, we know that $y_{real}$ reserves become $0$ when the price reaches or exceeds $P_{a}$. So, for any price at $P_{a}$ or below, there are $0 y_{real}$ tokens in the LP position for this range. 
+From Part 1 in this series, we know that $y_{real}$ reserves become $0$ when the price reaches or exceeds $P_{a}$. So, for any price at $P_{a}$ or below, there are $0$ $y_{real}$ tokens in the LP position for this range. 
 
 ---
 
-To solve for $L$, we take our concentrated liquidity function and specify that $y_{real}$ is 0 when $P \leq P_{a}$:
+To solve for $L$, we take our concentrated liquidity function and specify that $y_{real}$ is $0$ when $P \leq P_{a}$:
 
 $$
 (x_{real} + \frac{L}{\sqrt{P_{b}}})(0 + L \sqrt{P_{a}}) = L^{2} \longrightarrow (x_{real} + \frac{L}{\sqrt{P_{b}}})(L \sqrt{P_{a}}) = L^{2}
@@ -92,7 +92,7 @@ Here, we have a graph where $P$ is above $P_{b}$:
 
 ![image info](./curve-2.svg)
 
-From Part 1 in this series, we know that $x_{real}$ reserves become 0 when the price reaches or exceeds $P_{b}$. So, for any price at $P_{b}$ or higher, there are 0 $x_{real}$ tokens in the LP position for this range.
+From Part 1 in this series, we know that $x_{real}$ reserves become 0 when the price reaches or exceeds $P_{b}$. So, for any price at $P_{b}$ or higher, there are $0$ $x_{real}$ tokens in the LP position for this range.
 
 ---
 
@@ -110,7 +110,7 @@ $$
 \frac{1}{\sqrt{P_{b}}} \cdot (y_{real} + L \sqrt{P_{a}}) = L
 $$
 
-Multiply out $\frac{1}{\sqrt{P_{b}}}$:
+Multiply out $\displaystyle\frac{1}{\sqrt{P_{b}}}$:
 
 $$
 \frac{y_{real}}{\sqrt{P_{b}}} + L \cdot \frac{\sqrt{P_{a}}}{\sqrt{P_{b}}} = L
@@ -119,7 +119,7 @@ $$
 Move $L$ to one side:
 
 $$
-\frac{y_{real}}{\sqrt{P_{b}}} = L + L \cdot \frac{\sqrt{P_{a}}}{\sqrt{P_{b}}}
+\frac{y_{real}}{\sqrt{P_{b}}} = L - L \cdot \frac{\sqrt{P_{a}}}{\sqrt{P_{b}}}
 $$
 
 Multiply both sides by $\sqrt{P_{b}}$:
@@ -170,7 +170,7 @@ The intuition here is that any range, where $P$ is inside $P_{a}$ and $P_{b}$, c
 
 ![image info](./line-4.svg)
 
-Since we have already solved for $L$ in both cases where a range has oly $x_{real}$ tokens or only $y_{real}$ tokens, we can also solve for this case.
+Since we have already solved for $L$ in both cases where a range has only $x_{real}$ tokens or only $y_{real}$ tokens, we can also solve for this case.
 
 ---
 
