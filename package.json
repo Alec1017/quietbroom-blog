@@ -33,6 +33,7 @@
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   },
   "dependencies": {
+    "ethers": "^5.7.2",
     "gatsby": "^5.8.1",
     "gatsby-plugin-manifest": "^5.8.0",
     "gatsby-plugin-offline": "^6.8.0",
@@ -59,6 +60,7 @@
     "typeface-merriweather": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
     "typography": "^0.16.21",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "wagmi": "^0.12.12"
   }
 }
